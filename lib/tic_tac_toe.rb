@@ -117,7 +117,8 @@ def  play(board)
       puts "Please enter position(1-9):"
       input = gets.strip
       index = input_to_index(input)
-      move(board, index, current_player(board))
+
     end
+    move(board, index, current_player(board))
   end
 end
