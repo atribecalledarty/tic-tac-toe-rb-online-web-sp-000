@@ -112,6 +112,11 @@ end
 
 def  play(board)
   until over?(board)
-    
+    index = 20
+    until valid_move?(board, index)
+      puts "Please enter position(1-9):"
+      input = gets.strip
+      index = input_to_index(input)
+      move(board, index, current_player(board))
   end
 end
