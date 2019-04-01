@@ -121,4 +121,10 @@ def  play(board)
     end
     move(board, index, current_player(board))
   end
+  
+  if winner(board) == "X"
+    puts "Congratulations X!"
+  elsif winner(board) == "O"
+    puts "Congratulations O!"
+  end
 end
