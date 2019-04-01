@@ -100,7 +100,7 @@ def winner(board)
   
   if combination == false
     return nil
-  elsif
+  end
   
     index = combination[0]
     if board[index] == "X"
@@ -108,5 +108,5 @@ def winner(board)
     else if board[index] == "O"
       return "O"
     end
-  end
+
 end
