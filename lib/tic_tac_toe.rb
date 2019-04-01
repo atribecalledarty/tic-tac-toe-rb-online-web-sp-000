@@ -120,6 +120,7 @@ def  play(board)
 
     end
     move(board, index, current_player(board))
+    display_board(board)
   end
   
   if winner(board) == "X"
